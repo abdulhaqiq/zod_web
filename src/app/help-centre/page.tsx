@@ -4,7 +4,16 @@ import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
   title: "Help Centre",
-  description: "Find answers to common questions about Zod — account, matches, billing, safety, and more.",
+  description:
+    "Zod Help Centre — answers for account, matching, messaging, billing, safety and privacy questions.",
+  keywords: ["Zod help", "Zod support", "Zod FAQ", "Zod help centre", "Zod account help"],
+  alternates: { canonical: "https://zod.app/help-centre" },
+  openGraph: {
+    title: "Zod Help Centre — Find Your Answer",
+    description: "Everything you need to know about using Zod.",
+    url: "https://zod.app/help-centre",
+    type: "website",
+  },
 };
 
 const CATEGORIES = [

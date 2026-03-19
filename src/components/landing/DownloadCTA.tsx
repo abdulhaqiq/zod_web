@@ -56,9 +56,9 @@ export default function DownloadCTA() {
 
         <div className="flex items-center gap-8 pt-2">
           {[
-            { v: "4.9", l: "App Store" },
-            { v: "4.8", l: "Google Play" },
-            { v: "4M+", l: "Downloads" },
+            { v: "Free", l: "No card required" },
+            { v: "0 ads", l: "No ad model" },
+            { v: "E2EE", l: "Encrypted" },
           ].map((s) => (
             <div key={s.l} className="flex flex-col items-center gap-0.5">
               <span className="text-base font-black text-white" style={{ fontFamily: "'Product Sans', sans-serif" }}>{s.v}</span>

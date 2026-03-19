@@ -3,8 +3,17 @@ import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
-  title: "Press",
-  description: "Press resources and media contact for journalists writing about Zod.",
+  title: "Press & Media",
+  description:
+    "Press resources, media contact, and story angles for journalists writing about Zod — the AI dating app launched in 2026.",
+  keywords: ["Zod press", "Zod media", "Zod news", "AI dating app press", "Zod press kit"],
+  alternates: { canonical: "https://zod.app/press" },
+  openGraph: {
+    title: "Zod Press — Media Resources & Contact",
+    description: "We just launched. Be the first to cover the AI dating app that's doing things differently.",
+    url: "https://zod.app/press",
+    type: "website",
+  },
 };
 
 const ASSETS = [

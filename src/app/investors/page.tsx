@@ -4,7 +4,16 @@ import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
   title: "Investors",
-  description: "Zod is a pre-traction dating app launched in 2026. We are seeking our first investors.",
+  description:
+    "Zod is a pre-seed AI dating app launched in 2026 seeking its first investors. Real product, honest stage, strong thesis.",
+  keywords: ["Zod investors", "Zod investment", "AI dating startup 2026", "dating app startup", "Zevello funding"],
+  alternates: { canonical: "https://zod.app/investors" },
+  openGraph: {
+    title: "Invest in Zod — Pre-Launch AI Dating App",
+    description: "Pre-seed. Real product. Right time. The dating market is broken — Zod is the fix.",
+    url: "https://zod.app/investors",
+    type: "website",
+  },
 };
 
 const WHY = [

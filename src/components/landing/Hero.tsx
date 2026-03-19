@@ -16,7 +16,7 @@ export default function Hero() {
         {/* Left — copy */}
         <div className="flex-1 flex flex-col gap-7 max-w-xl">
           <span className="self-start px-3.5 py-1 text-xs font-medium text-gray-300 border border-white/15 tracking-widest uppercase">
-            #1 AI Dating App 2025
+            #1 AI Dating App 2026
           </span>
 
           <h1
@@ -52,10 +52,10 @@ export default function Hero() {
           {/* Inline trust signals */}
           <div className="flex flex-wrap items-center gap-5 pt-2">
             {[
-              { value: "4M+", label: "Downloads" },
-              { value: "94%", label: "Match accuracy" },
-              { value: "4.9", label: "App rating" },
-              { value: "120+", label: "Countries" },
+              { value: "2k+", label: "Downloads" },
+              { value: "200+", label: "Active users" },
+              { value: "10+", label: "Nationalities" },
+              { value: "1k+", label: "AI analyses" },
             ].map((s) => (
               <div key={s.label} className="flex flex-col">
                 <span className="text-xl font-black text-white" style={{ fontFamily: "'Product Sans', sans-serif" }}>
@@ -117,10 +117,9 @@ export default function Hero() {
                 className="absolute bottom-4 left-4 right-4 flex items-center justify-between px-3 py-2 border border-white/12"
                 style={{ background: "rgba(0,0,0,0.7)", backdropFilter: "blur(12px)" }}
               >
-                <span className="text-xs text-gray-300">App rating</span>
+                <span className="text-xs text-gray-300">End-to-end encrypted</span>
                 <div className="flex items-center gap-1">
-                  <span className="text-xs font-bold text-white">4.9</span>
-                  <Ic.Stars s={10} />
+                  <span className="text-xs font-bold text-white">Always</span>
                 </div>
               </div>
             </div>

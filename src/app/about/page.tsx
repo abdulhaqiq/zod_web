@@ -3,8 +3,17 @@ import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
-  title: "About Us",
-  description: "Zod is a new kind of dating app — built in 2026, powered entirely by AI, and designed from scratch to help people find real relationships.",
+  title: "About Zod",
+  description:
+    "Learn about Zod — the AI dating app built in 2026 from first principles. Our mission, values, and how an AI-first team is changing the way people find relationships.",
+  keywords: ["about Zod", "Zod dating app", "Zod company", "AI dating app 2026", "Zevello Inc", "Zod founder"],
+  alternates: { canonical: "https://zod.app/about" },
+  openGraph: {
+    title: "About Zod — The AI Dating App Built Differently",
+    description: "Zod launched in 2026 with one belief: the dating industry is broken. Meet the AI team fixing it.",
+    url: "https://zod.app/about",
+    type: "website",
+  },
 };
 
 const VALUES = [
@@ -72,9 +81,34 @@ const VALUES = [
   },
 ];
 
+const aboutSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "@id": "https://zod.app/about",
+  name: "About Zod",
+  url: "https://zod.app/about",
+  description:
+    "Zod is an AI-powered dating application founded in 2026 and operated by Zevello, Inc. It is designed to match users based on deep compatibility signals rather than superficial swiping mechanics.",
+  mainEntity: {
+    "@type": "Organization",
+    "@id": "https://zod.app/#organization",
+    name: "Zod",
+    legalName: "Zevello, Inc.",
+    foundingDate: "2026",
+    description:
+      "Zod is an AI-powered dating app launched in 2026, operated by Zevello, Inc. It uses a compatibility engine trained on relationship psychology and behavioural science to surface meaningful matches.",
+    url: "https://zod.app",
+    logo: "https://zod.app/favicon.png",
+  },
+};
+
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+      />
       <Header />
       <main className="bg-black text-white min-h-screen">
 
@@ -200,6 +234,30 @@ export default function AboutPage() {
               <p>
                 We are a small operation, and we are proud of that. Staying lean means we can move quickly, stay honest, and keep our focus entirely on what matters: making the product better for you.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Company info — structured for Google */}
+        <section className="py-16 px-6 border-t border-white/6">
+          <div className="max-w-5xl mx-auto">
+            <p className="text-[10px] tracking-widest uppercase text-gray-600 mb-8">Company Information</p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/6">
+              {[
+                { label: "Legal name", value: "Zevello, Inc." },
+                { label: "Incorporated", value: "Delaware, USA" },
+                { label: "Founded", value: "2026" },
+                { label: "Category", value: "Dating App" },
+                { label: "Headquarters", value: "London, UK" },
+                { label: "Also in", value: "Dubai, UAE" },
+                { label: "Platform", value: "iOS & Android" },
+                { label: "Business model", value: "Subscription" },
+              ].map((item) => (
+                <div key={item.label} className="bg-black px-6 py-5 flex flex-col gap-1">
+                  <span className="text-[10px] text-gray-700 uppercase tracking-wide">{item.label}</span>
+                  <span className="text-sm text-white font-medium">{item.value}</span>
+                </div>
+              ))}
             </div>
           </div>
         </section>

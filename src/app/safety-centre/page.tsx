@@ -4,7 +4,16 @@ import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
   title: "Safety Centre",
-  description: "How Zod keeps you safe — ID verification, encryption, reporting tools, and more.",
+  description:
+    "Zod Safety Centre — ID verification, end-to-end encryption, AI moderation, instant blocking, and one-tap reporting keep you safe.",
+  keywords: ["Zod safety", "Zod safe dating", "Zod ID verification", "safe dating app", "Zod encrypted"],
+  alternates: { canonical: "https://zod.app/safety-centre" },
+  openGraph: {
+    title: "Zod Safety Centre — Your Safety Is Not Optional",
+    description: "Every safety feature built into Zod from day one.",
+    url: "https://zod.app/safety-centre",
+    type: "website",
+  },
 };
 
 const FEATURES = [

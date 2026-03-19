@@ -3,8 +3,17 @@ import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Get in touch with the Zod team — support, press, partnerships, or general enquiries.",
+  title: "Contact Zod",
+  description:
+    "Contact the Zod team for support, press, partnerships, investor relations, or legal enquiries. Real people, real responses.",
+  keywords: ["Zod contact", "Zod support", "contact Zod app", "Zod customer service", "Zod email"],
+  alternates: { canonical: "https://zod.app/contact" },
+  openGraph: {
+    title: "Contact Zod — Get in Touch",
+    description: "Find the right team and reach out. We respond to everything personally.",
+    url: "https://zod.app/contact",
+    type: "website",
+  },
 };
 
 const TEAMS = [

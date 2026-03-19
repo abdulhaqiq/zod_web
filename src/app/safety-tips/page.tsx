@@ -4,7 +4,16 @@ import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
   title: "Safety Tips",
-  description: "Practical safety advice for dating online and meeting people in person through Zod.",
+  description:
+    "Practical safety tips for using Zod — staying safe on the app, preparing for a first date, and what to do on the night.",
+  keywords: ["Zod safety tips", "dating safety tips", "online dating safety", "first date safety", "Zod safe"],
+  alternates: { canonical: "https://zod.app/safety-tips" },
+  openGraph: {
+    title: "Zod Safety Tips — Date Smarter, Stay Safer",
+    description: "Practical safety advice for every stage of dating on Zod.",
+    url: "https://zod.app/safety-tips",
+    type: "website",
+  },
 };
 
 const STAGES = [

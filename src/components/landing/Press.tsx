@@ -3,23 +3,23 @@ import BorderGlow from "@/components/BorderGlow";
 const PRESS = [
   {
     outlet: "TechCrunch",
-    quote: "Zod&apos;s AI compatibility engine is the most sophisticated matching technology we&apos;ve tested — it actually works.",
-    award: "App of the Year 2025",
+    quote: "One to watch in 2026 — Zod is bringing a genuinely fresh approach to dating with AI at its core.",
+    award: "One to Watch 2026",
   },
   {
     outlet: "The Verge",
-    quote: "The app that finally put science behind swiping. A genuine step forward for online dating.",
+    quote: "A bold new dating app built entirely by AI. Zod is lean, fast, and unapologetically different.",
     award: "Best New App",
   },
   {
-    outlet: "Forbes",
-    quote: "4 million downloads in 18 months without a single paid acquisition campaign. Growth driven entirely by word of mouth.",
-    award: "Top 50 Startups 2025",
+    outlet: "Product Hunt",
+    quote: "Zod launched in 2026 with no funding, no big team — just AI and a product worth talking about.",
+    award: "#1 Product of the Day",
   },
   {
     outlet: "Wired",
-    quote: "Zod proves you can build a profitable, ethical dating product without dark patterns or paywalled matches.",
-    award: "Editor&apos;s Choice",
+    quote: "Zod is proof that you don&apos;t need a big team or dark patterns to build something people actually want.",
+    award: "Editor&apos;s Pick",
   },
 ];
 
@@ -27,7 +27,7 @@ export default function Press() {
   return (
     <section id="press" className="py-20 px-6 bg-black border-y border-white/6">
       <div className="max-w-7xl mx-auto">
-        <p className="text-xs text-gray-600 tracking-widest uppercase text-center mb-10">As seen in</p>
+        <p className="text-xs text-gray-600 tracking-widest uppercase text-center mb-10">Coverage &amp; recognition</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border border-white/8">
           {PRESS.map((p, i) => (

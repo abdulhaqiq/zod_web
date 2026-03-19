@@ -3,8 +3,17 @@ import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
-  title: "Careers",
-  description: "Zod is an AI-first team. We are small, new, and building fast. Learn what that means.",
+  title: "Careers at Zod",
+  description:
+    "Work at Zod — the AI-first dating app launched in 2026. A lean team building something that matters. See what it means to work here.",
+  keywords: ["Zod careers", "Zod jobs", "AI company jobs 2026", "dating app jobs", "Zevello careers"],
+  alternates: { canonical: "https://zod.app/careers" },
+  openGraph: {
+    title: "Careers at Zod — Build the Future of Human Connection",
+    description: "Zod is an AI-first team. Small, lean, and building fast. See open roles.",
+    url: "https://zod.app/careers",
+    type: "website",
+  },
 };
 
 const PRINCIPLES = [

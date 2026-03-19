@@ -4,7 +4,16 @@ import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
   title: "Partnerships",
-  description: "Zod is seeking founding partners as we launch in 2026. Be part of something new.",
+  description:
+    "Become a founding partner of Zod — the AI dating app. Technology, brand, media, events, and distribution partnerships open.",
+  keywords: ["Zod partnerships", "Zod partner", "dating app partnership", "AI app brand partnership"],
+  alternates: { canonical: "https://zod.app/partnerships" },
+  openGraph: {
+    title: "Partner With Zod — Founding Partnerships Open",
+    description: "Be a founding partner of the AI dating app launching in 2026.",
+    url: "https://zod.app/partnerships",
+    type: "website",
+  },
 };
 
 const TYPES = [

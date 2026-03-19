@@ -3,7 +3,7 @@ import BorderGlow from "@/components/BorderGlow";
 const POSTS = [
   {
     category: "Relationship Science",
-    title: "Why 94% of Zod matches actually lead to conversations",
+    title: "Why most dating app matches go nowhere — and what Zod does differently",
     excerpt: "Most dating apps optimise for time-on-app. We optimised for what happens after you match. Here is what the data shows.",
     image: "https://images.unsplash.com/photo-1516589091380-5d8e87df6999?w=700&q=80",
     date: "Mar 10, 2025",
@@ -21,7 +21,7 @@ const POSTS = [
     category: "Safety",
     title: "How Zod detects and removes fake profiles in under 3 minutes",
     excerpt: "A look inside our AI safety system and why it catches 99.3% of scam accounts before you ever see them.",
-    image: "https://images.unsplash.com/photo-1502767089517-4cd95dfc8d25?w=700&q=80",
+    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=700&q=80",
     date: "Feb 14, 2025",
     readTime: "6 min read",
   },

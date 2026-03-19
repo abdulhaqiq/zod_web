@@ -1,4 +1,4 @@
-import { ZodLogo } from "./shared";
+
 
 const LINKS = {
   Product: [
@@ -164,7 +164,12 @@ export default function Footer() {
           {/* Brand column */}
           <div className="col-span-2 sm:col-span-3 lg:col-span-1 flex flex-col gap-5">
             <div className="text-white">
-              <ZodLogo size={44} />
+              <span
+                className="text-white text-[22px] leading-none tracking-tight select-none"
+                style={{ fontFamily: "'Page Serif', Georgia, serif", fontWeight: 400 }}
+              >
+                zod
+              </span>
             </div>
             <p className="text-xs text-gray-600 leading-relaxed max-w-[190px]">
               The AI-powered dating app built for real relationships.
@@ -252,11 +257,8 @@ export default function Footer() {
           </div>
           <div className="flex items-center gap-4 flex-wrap">
             <div className="flex items-center gap-1.5">
-              <span
-                className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block flex-shrink-0"
-                style={{ animation: "pulse-dot 2s ease-in-out infinite" }}
-              />
-              <span className="text-xs text-gray-700">2,847 matches made today</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block flex-shrink-0" />
+              <span className="text-xs text-gray-700">Just launched — 2026</span>
             </div>
             <div className="flex items-center gap-3">
               <a href="#" className="text-[10px] text-gray-700 hover:text-gray-500 transition-colors uppercase tracking-wide">English</a>

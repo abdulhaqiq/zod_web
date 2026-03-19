@@ -53,7 +53,7 @@ const FEATURES = [
     num: "07",
     icon: <Ic.Globe s={22} />,
     title: "Worldwide Dating",
-    body: "120+ countries. Whether you are travelling, relocating, or open to a long-distance connection.",
+    body: "Available worldwide. Whether you are travelling, relocating, or open to a long-distance connection.",
     size: "wide",
     accent: "text-white",
   },

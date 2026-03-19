@@ -3,8 +3,17 @@ import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
-  title: "Open Roles",
-  description: "Zod is an AI-first team. We have a small number of open positions for people who want to work differently.",
+  title: "Open Roles at Zod",
+  description:
+    "Current job openings at Zod — AI Product Lead, AI Systems Engineer, Growth Lead. Join the AI-first dating app team.",
+  keywords: ["Zod hiring", "Zod open roles", "AI jobs 2026", "dating app engineer jobs", "Zod engineer"],
+  alternates: { canonical: "https://zod.app/hiring" },
+  openGraph: {
+    title: "Zod Is Hiring — Open Roles",
+    description: "A few great people wanted. See current openings at Zod.",
+    url: "https://zod.app/hiring",
+    type: "website",
+  },
 };
 
 const ROLES = [

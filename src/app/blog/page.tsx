@@ -3,8 +3,17 @@ import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
-  title: "Blog",
-  description: "Thoughts on AI, dating, relationships, and building Zod — coming soon.",
+  title: "Zod Blog",
+  description:
+    "The Zod Journal — writing on AI, modern dating, relationship science, and building a company from scratch in 2026.",
+  keywords: ["Zod blog", "dating app blog", "AI dating research", "relationship science", "Zod journal"],
+  alternates: { canonical: "https://zod.app/blog" },
+  openGraph: {
+    title: "Zod Blog — Writing About Dating, AI & Relationships",
+    description: "Dispatches from the team building the world's most thoughtful dating app.",
+    url: "https://zod.app/blog",
+    type: "website",
+  },
 };
 
 const UPCOMING = [

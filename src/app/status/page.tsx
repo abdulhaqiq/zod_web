@@ -3,8 +3,17 @@ import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
-  title: "Status",
-  description: "Live status of all Zod services — API, matching engine, notifications, and more.",
+  title: "System Status",
+  description:
+    "Live status for all Zod services — app, matching engine, messaging, notifications, payments, and more. All systems operational.",
+  keywords: ["Zod status", "Zod down", "is Zod down", "Zod server status", "Zod operational"],
+  alternates: { canonical: "https://zod.app/status" },
+  openGraph: {
+    title: "Zod System Status — All Services Operational",
+    description: "Live status for every Zod service. Subscribe to incident alerts.",
+    url: "https://zod.app/status",
+    type: "website",
+  },
 };
 
 const SERVICES = [

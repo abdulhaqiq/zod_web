@@ -4,7 +4,16 @@ import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
   title: "Community Guidelines",
-  description: "The rules and values that keep Zod a safe, respectful, and genuine place to find connections.",
+  description:
+    "Zod's community rules — be genuine, be respectful, stay safe. The standards that keep Zod a trustworthy place to find connections.",
+  keywords: ["Zod community guidelines", "Zod rules", "Zod code of conduct", "dating app safety rules"],
+  alternates: { canonical: "https://zod.app/community-guidelines" },
+  openGraph: {
+    title: "Zod Community Guidelines",
+    description: "The rules that keep Zod worth using.",
+    url: "https://zod.app/community-guidelines",
+    type: "website",
+  },
 };
 
 const RULES = [

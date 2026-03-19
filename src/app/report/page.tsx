@@ -4,7 +4,16 @@ import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
   title: "Report a Problem",
-  description: "Report a user, content, or safety concern on Zod. We review every report.",
+  description:
+    "Report a user, fake profile, harassment, or safety concern on Zod. Every report is reviewed. Anonymous and fast.",
+  keywords: ["Zod report", "report Zod user", "Zod block user", "Zod safety report"],
+  alternates: { canonical: "https://zod.app/report" },
+  openGraph: {
+    title: "Report a Problem on Zod",
+    description: "We take every report seriously. Anonymous. Reviewed within hours.",
+    url: "https://zod.app/report",
+    type: "website",
+  },
 };
 
 const REPORT_TYPES = [

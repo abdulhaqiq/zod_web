@@ -18,19 +18,12 @@ const TICKERS = [
   "Hana & David matched in Seoul",
 ];
 
-const STATS = [
-  { value: "2,847", label: "Matches today", icon: <Ic.Heart s={16} /> },
-  { value: "120+", label: "Countries active", icon: <Ic.Globe s={16} /> },
-  { value: "4M+", label: "Total downloads", icon: <Ic.User s={16} /> },
-  { value: "94%", label: "Match accuracy", icon: <Ic.Zap s={16} /> },
-];
-
 export default function LiveStats() {
-  const [count, setCount] = useState(2847);
+  const [count, setCount] = useState(1247);
 
   useEffect(() => {
     const iv = setInterval(() => {
-      setCount((c) => c + Math.floor(Math.random() * 3 + 1));
+      setCount((c) => (c < 1999 ? c + Math.floor(Math.random() * 2 + 1) : c));
     }, 4000);
     return () => clearInterval(iv);
   }, []);
@@ -54,7 +47,12 @@ export default function LiveStats() {
 
       {/* Stats bar */}
       <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-0 border-x border-white/4">
-        {STATS.map((s, i) => (
+        {[
+          { value: count.toLocaleString(), label: "Matches today", icon: <Ic.Heart s={16} />, live: true },
+          { value: "10+", label: "Countries active", icon: <Ic.Globe s={16} /> },
+          { value: "94%", label: "Analysis accuracy", icon: <Ic.Zap s={16} /> },
+          { value: "200+", label: "Active users", icon: <Ic.User s={16} /> },
+        ].map((s, i) => (
           <BorderGlow key={i} backgroundColor="#000000" borderRadius={0} animated={false}>
             <div className="flex items-center gap-3 p-5 border-r border-white/6 last:border-r-0 group cursor-default h-full">
               <div className="w-9 h-9 flex items-center justify-center text-gray-400 border border-white/10 flex-shrink-0">
@@ -65,7 +63,13 @@ export default function LiveStats() {
                   className="text-xl font-black text-white leading-none"
                   style={{ fontFamily: "'Product Sans', sans-serif" }}
                 >
-                  {i === 0 ? count.toLocaleString() : s.value}
+                  {s.value}
+                  {s.live && (
+                    <span
+                      className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 ml-1.5 mb-0.5 align-middle"
+                      style={{ animation: "pulse-dot 2s ease-in-out infinite" }}
+                    />
+                  )}
                 </p>
                 <p className="text-xs text-gray-500 mt-0.5">{s.label}</p>
               </div>

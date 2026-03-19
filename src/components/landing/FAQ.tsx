@@ -13,7 +13,7 @@ const FAQS = [
   },
   {
     q: "Is Zod available worldwide?",
-    a: "Zod is active in 120+ countries on iOS and Android. Some features may vary by region. International matching is supported — many couples on Zod have connected across countries.",
+    a: "Zod is available worldwide on iOS and Android. Some features may vary by region. International matching is fully supported.",
   },
   {
     q: "How does photo and ID verification work?",
