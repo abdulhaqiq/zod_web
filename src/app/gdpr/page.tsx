@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 import PolicyPage, { P, H3, UL, InfoBox, ContactBlock } from "@/components/landing/PolicyPage";
 
 export const metadata: Metadata = {
-  title: "GDPR — Your EU/EEA Privacy Rights",
+  title: "GDPR — EU/EEA Privacy Rights",
   description: "Information for users in the European Union and European Economic Area about how Zod complies with GDPR and processes your personal data.",
+  keywords: ["Zod GDPR", "Zod EU privacy", "GDPR dating app", "Zod data rights", "Zod EEA privacy"],
+  alternates: { canonical: "https://zod.app/gdpr" },
+  openGraph: {
+    title: "Zod — GDPR EU/EEA Privacy Rights",
+    description: "Your EU and EEA privacy rights explained. How Zod complies with GDPR.",
+    url: "https://zod.app/gdpr",
+    type: "website",
+  },
 };
 
 const sections = [

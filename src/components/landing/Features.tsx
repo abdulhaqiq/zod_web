@@ -61,8 +61,6 @@ const FEATURES = [
 
 export default function Features() {
   const [large, ...rest] = FEATURES;
-  const middle = rest.slice(0, 4);
-  const last = rest.slice(4);
 
   return (
     <section id="features" className="bg-black py-28">
@@ -154,32 +152,6 @@ export default function Features() {
             </p>
           </div>
 
-          {/* 07 — Globe wide */}
-          <div className="group relative bg-black p-8 flex flex-col justify-between min-h-[200px] overflow-hidden hover:bg-white/[0.03] transition-colors cursor-default">
-            <span
-              className="absolute -right-3 -top-4 text-[130px] font-black text-white/[0.03] leading-none select-none pointer-events-none"
-              style={{ fontFamily: "'Product Sans', sans-serif" }}
-            >
-              {last[0].num}
-            </span>
-            <div className="flex items-start justify-between">
-              <div className="w-11 h-11 flex items-center justify-center border border-white/10 text-gray-500 group-hover:text-white group-hover:border-white/25 transition-colors">
-                {last[0].icon}
-              </div>
-              <span className="text-xs font-mono text-gray-700">{last[0].num}</span>
-            </div>
-            <div className="flex flex-col gap-2 pt-8">
-              <h3
-                className="text-lg font-black text-white"
-                style={{ fontFamily: "'Product Sans', sans-serif" }}
-              >
-                {last[0].title}
-              </h3>
-              <p className="text-sm text-gray-500 group-hover:text-gray-400 transition-colors leading-relaxed">
-                {last[0].body}
-              </p>
-            </div>
-          </div>
 
         </div>
       </div>

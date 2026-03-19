@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/landing/Header";
 
 export const metadata: Metadata = {
-  title: "Zod — The AI Dating App",
+  title: { absolute: "Zod — The AI Dating App" },
   description:
     "Zod is the AI dating app that matches you on real compatibility — not swipes. Download free on iOS & Android. Built in 2026.",
   keywords: ["Zod", "Zod app", "Zod dating app", "AI dating app", "best dating app 2026", "free dating app", "find love", "meet singles"],

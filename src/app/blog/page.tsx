@@ -3,7 +3,7 @@ import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
-  title: "Zod Blog",
+  title: "Blog",
   description:
     "The Zod Journal — writing on AI, modern dating, relationship science, and building a company from scratch in 2026.",
   keywords: ["Zod blog", "dating app blog", "AI dating research", "relationship science", "Zod journal"],

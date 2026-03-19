@@ -7,7 +7,7 @@ const LINKS = {
     { label: "AI Matching", href: "#ai" },
     { label: "Safety", href: "#safety" },
     { label: "Pricing", href: "#pricing" },
-    { label: "Compatibility Quiz", href: "#" },
+    { label: "Compatibility Quiz", href: "/quiz" },
     { label: "Success Rate", href: "#" },
   ],
   Company: [

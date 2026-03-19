@@ -4,6 +4,14 @@ import PolicyPage, { P, H3, UL, InfoBox, ContactBlock } from "@/components/landi
 export const metadata: Metadata = {
   title: "Cookie Policy",
   description: "Learn how Zod uses cookies and similar tracking technologies, and how you can control them.",
+  keywords: ["Zod cookie policy", "Zod cookies", "dating app cookies", "Zod tracking policy"],
+  alternates: { canonical: "https://zod.app/cookies" },
+  openGraph: {
+    title: "Zod Cookie Policy",
+    description: "How Zod uses cookies and how you can control them.",
+    url: "https://zod.app/cookies",
+    type: "website",
+  },
 };
 
 const COOKIE_TABLE = [

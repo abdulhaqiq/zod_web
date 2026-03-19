@@ -4,7 +4,14 @@ import PolicyPage, { P, H3, UL, InfoBox, ContactBlock } from "@/components/landi
 export const metadata: Metadata = {
   title: "Terms of Service",
   description: "Read Zod's full Terms of Service. These terms govern your use of the Zod app, website, and all related services.",
+  keywords: ["Zod terms of service", "Zod terms", "Zod user agreement", "dating app terms"],
   alternates: { canonical: "https://zod.app/terms" },
+  openGraph: {
+    title: "Zod Terms of Service",
+    description: "The terms that govern your use of Zod — the AI dating app.",
+    url: "https://zod.app/terms",
+    type: "website",
+  },
 };
 
 const sections = [

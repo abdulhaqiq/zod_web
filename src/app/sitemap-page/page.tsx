@@ -4,7 +4,15 @@ import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
   title: "Sitemap",
-  description: "A complete map of every page on Zod.",
+  description: "A complete map of every page on Zod — product, company, legal, support, and more.",
+  keywords: ["Zod sitemap", "Zod all pages", "Zod site structure"],
+  alternates: { canonical: "https://zod.app/sitemap-page" },
+  openGraph: {
+    title: "Zod Sitemap",
+    description: "Browse every page on Zod.",
+    url: "https://zod.app/sitemap-page",
+    type: "website",
+  },
 };
 
 const SECTIONS = [

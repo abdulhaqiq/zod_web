@@ -5,6 +5,14 @@ import Footer from "@/components/landing/Footer";
 export const metadata: Metadata = {
   title: "Cookie Settings",
   description: "Manage your cookie preferences for Zod. Control which cookies are active on your device.",
+  keywords: ["Zod cookie settings", "Zod cookie preferences", "manage cookies Zod"],
+  alternates: { canonical: "https://zod.app/cookie-settings" },
+  openGraph: {
+    title: "Zod Cookie Settings",
+    description: "Manage and control your cookie preferences on Zod.",
+    url: "https://zod.app/cookie-settings",
+    type: "website",
+  },
 };
 
 const CATEGORIES = [

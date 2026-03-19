@@ -3,7 +3,7 @@ import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
-  title: "Contact Zod",
+  title: "Contact",
   description:
     "Contact the Zod team for support, press, partnerships, investor relations, or legal enquiries. Real people, real responses.",
   keywords: ["Zod contact", "Zod support", "contact Zod app", "Zod customer service", "Zod email"],

@@ -4,6 +4,14 @@ import PolicyPage, { P, H3, UL, InfoBox, ContactBlock } from "@/components/landi
 export const metadata: Metadata = {
   title: "CCPA — California Privacy Rights",
   description: "Information for California residents about their privacy rights under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA).",
+  keywords: ["Zod CCPA", "California privacy rights", "CPRA Zod", "Zod California users", "dating app CCPA"],
+  alternates: { canonical: "https://zod.app/ccpa" },
+  openGraph: {
+    title: "Zod — CCPA California Privacy Rights",
+    description: "Your California privacy rights explained. How Zod complies with CCPA and CPRA.",
+    url: "https://zod.app/ccpa",
+    type: "website",
+  },
 };
 
 const DATA_CATEGORIES = [

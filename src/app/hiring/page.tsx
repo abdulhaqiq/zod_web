@@ -3,7 +3,7 @@ import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
-  title: "Open Roles at Zod",
+  title: "Hiring",
   description:
     "Current job openings at Zod — AI Product Lead, AI Systems Engineer, Growth Lead. Join the AI-first dating app team.",
   keywords: ["Zod hiring", "Zod open roles", "AI jobs 2026", "dating app engineer jobs", "Zod engineer"],

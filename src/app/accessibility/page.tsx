@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 import PolicyPage, { P, H3, UL, InfoBox, ContactBlock } from "@/components/landing/PolicyPage";
 
 export const metadata: Metadata = {
-  title: "Accessibility Statement",
+  title: "Accessibility",
   description: "Zod's commitment to digital accessibility. Learn about our WCAG compliance, accessible features, and how to contact us with accessibility concerns.",
+  keywords: ["Zod accessibility", "Zod WCAG", "accessible dating app", "Zod screen reader support"],
+  alternates: { canonical: "https://zod.app/accessibility" },
+  openGraph: {
+    title: "Zod Accessibility Statement",
+    description: "Zod is committed to being accessible to everyone. Learn about our WCAG compliance and accessible features.",
+    url: "https://zod.app/accessibility",
+    type: "website",
+  },
 };
 
 const sections = [

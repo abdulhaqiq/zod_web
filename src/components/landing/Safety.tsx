@@ -12,7 +12,7 @@ const PILLARS = [
     icon: <Ic.Shield s={20} />,
     title: "ID Verification (Optional)",
     body: "Opt-in identity check powered by government ID. Adds a blue verified badge — trusted by your matches.",
-    stat: "3M+ verified users",
+    stat: "1k+ verified users",
   },
   {
     icon: <Ic.Eye s={20} />,

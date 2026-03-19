@@ -4,6 +4,14 @@ import PolicyPage, { P, H3, UL, InfoBox, ContactBlock } from "@/components/landi
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "Learn how Zod collects, uses, and protects your personal information. We are committed to your privacy and data security.",
+  keywords: ["Zod privacy policy", "Zod data privacy", "Zod personal data", "dating app privacy", "Zod GDPR"],
+  alternates: { canonical: "https://zod.app/privacy" },
+  openGraph: {
+    title: "Zod Privacy Policy",
+    description: "How Zod collects, uses, and protects your data. Your privacy matters to us.",
+    url: "https://zod.app/privacy",
+    type: "website",
+  },
 };
 
 const sections = [
